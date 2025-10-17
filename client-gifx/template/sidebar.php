@@ -63,6 +63,9 @@ $isIB = false;
                         <li class="sidebar-dropdown-item">
                             <a href="/security" class="sidebar-link"><span class="nav-icon"><i class="fa-light fa-shield"></i></span> <span class="sidebar-txt">Security</span></a>
                         </li>
+                        <li class="sidebar-dropdown-item">
+                            <a href="/bank" class="sidebar-link"><span class="nav-icon"><i class="fa-light bi bi-bank"></i></span> <span class="sidebar-txt">Bank</span></a>
+                        </li>
                     </ul>
                 </li>
                 
@@ -102,9 +105,6 @@ $isIB = false;
                     <a role="button" class="sidebar-link-group-title has-sub">IB</a>
                     <ul class="sidebar-link-group">
                         <li class="sidebar-dropdown-item">
-                            <?php if(User::allowToApplyReferral($userid)) : ?>
-                                <a href="/ib/apply-referral" class="sidebar-link"><span class="nav-icon"><i class="fa-light fa-link"></i></span> <span class="sidebar-txt">Apply Referral</span></a>
-                            <?php endif; ?>
                             <a href="/ib/become" class="sidebar-link"><span class="nav-icon"><i class="fa-light fa-users"></i></span> <span class="sidebar-txt">Become IB</span></a>
                             <a href="/ib/tree" class="sidebar-link"><span class="nav-icon"><i class="fa-light fa-users"></i></span> <span class="sidebar-txt">Treeview</span></a>
                         </li>
